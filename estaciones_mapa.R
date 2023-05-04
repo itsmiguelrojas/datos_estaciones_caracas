@@ -32,7 +32,7 @@ leaflet(estaciones) %>%
                    '<br><b>Octubre:</b> ','<em style="color:red;">',`Octubre T`,'</em>,','<em style="color:blue;">',`Octubre P`,'</em>',
                    '<br><b>Noviembre:</b> ','<em style="color:red;">',`Noviembre T`,'</em>,','<em style="color:blue;">',`Noviembre P`,'</em>',
                    '<br><b>Diciembre:</b> ','<em style="color:red;">',`Diciembre T`,'</em>,','<em style="color:blue;">',`Diciembre P`,'</em>',
-                   '<br><br><em>Grieser, J., Gommes, R. y Bernardi, M. 2006. New LocClim-the local climate estimartor of FAO. Geophys. Res. Abstr., <b>8(8305):</b> 2.</em>'),
+                   '<br><br><em>Grieser, J., Gommes, R. y Bernardi, M. 2006. New LocClim-the local climate estimator of FAO. Geophys. Res. Abstr., <b>8(8305):</b> 2.</em>'),
     group = 'Estaciones meteorológicas') %>%
   addMarkers(
     data = lugarEstudio,
