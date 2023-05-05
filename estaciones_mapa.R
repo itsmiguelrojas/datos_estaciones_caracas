@@ -2,7 +2,6 @@
 library(tidyverse)
 library(leaflet)
 library(leafem)
-library(leafpop)
 
 load("C:/Users/PC ONE/R/Estaciones/estaciones_mapa.RData")
 
@@ -19,7 +18,7 @@ leaflet(estaciones) %>%
     lng = ~Longitud,
     label = ~paste(`Estación`,'(',Altitud,' m)'),
     labelOptions = labelOptions(style = list('font-size' = '16px'), noHide = T, direction = 'right'),
-    popup = ~paste('<p style="font-size:16px;"><b style="color:red;">Temperaturas (°C)</b> y <b style="color:blue;">precipitación</b></p>',
+    popup = ~paste('<p style="font-size:16px;"><b style="color:red;">Temperaturas (°C)</b> y <b style="color:blue;">precipitación (mm)</b></p>',
                    '<b>Enero:</b> ','<em style="color:red;">',`Enero T`,'</em>,','<em style="color:blue;">',`Enero P`,'</em>',
                    '<br><b>Febrero:</b> ','<em style="color:red;">',`Febrero T`,'</em>,','<em style="color:blue;">',`Febrero P`,'</em>',
                    '<br><b>Marzo:</b> ','<em style="color:red;">',`Marzo T`,'</em>,','<em style="color:blue;">',`Marzo P`,'</em>',
