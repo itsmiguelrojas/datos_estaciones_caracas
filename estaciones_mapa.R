@@ -6,7 +6,7 @@ library(leafem)
 load("C:/Users/PC ONE/R/Estaciones/estaciones_mapa.RData")
 
 locMarker <- makeIcon(
-  iconUrl = "C:\\Users\\PC ONE\\Desktop\\Datos práctica integradora Vol. II\\20150203194453red_pin.png",
+  iconUrl = "C:\\Users\\PC ONE\\R\\Estaciones\\20150203194453red_pin.png",
   iconWidth = 25,
   iconHeight = 41
 )
